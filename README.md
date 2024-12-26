@@ -1,33 +1,20 @@
-# AedsIITrabalhoPratico
+# AedsII Practical Work
 
-(Lucas)
-Parte 1: 
-1. Implementar  o  método  de  força  bruta  para  solucionar  o  problema,  ou  seja,  um 
-algoritmo que determina todas as possíveis rotas e escolhe a melhor, ou seja, a menor; 
-2. Gerar instâncias de tamanho 2 à n e aplicar o método implementado no item 1; 
-3. Computar o tempo de execução durante a aplicação da  força-bruta em cada uma  das 
-instâncias  geradas.  A  aplicação  do  método  deve  ser  realizada  em  quantas  instâncias 
-forem  possíveis  (possivelmente  o  tamanho  máximo  vai  girar  em  torno  de  10  a  14 
-cidades); 
-Obs.:  as  instâncias  devem  ser  geradas  de  forma  automática  onde  os  pesos  possuem 
-valores  aleatórios.  Pode-se  utilizar  qualquer  tipo  de  representação  de  grados  que  se 
-desejar.
+## Part 1 (Lucas)
 
-## Comentários:
-A minha parte já esta concluída e esta em -> code/bruteForce. Quando o projeto finalizar juntamos as pastas.
+1. Implement the **brute force method** to solve the problem, i.e., an algorithm that determines all possible routes and selects the best (shortest) one.
+2. Generate instances with sizes from 2 to n and apply the method implemented in item 1.
+3. Compute the execution time while applying the brute force method on each of the generated instances. The method should be applied to as many instances as possible (likely with sizes ranging from 10 to 14 cities).
 
-(Emanuel)
-Parte 2: 
-1. Implementar uma heurística para encontrar uma solução para o problema do caixeiro 
-viajante. A heurística fica a sua escolha. 
-2. Aplicar  o  método  implementado  no  item  anterior  em  três  instâncias  do  problema 
-disponíveis no moodle. 
-a. si535.tsp:  o  problema  possui  535  cidades  e  as  distâncias  estão  disponíveis  em 
-forma de matriz de adjacência, mas somente a diagonal superior desta matriz; 
-b. pa561.tsp: o problema possui 561 cidades e as distâncias estão disponíveis em 
-forma de matriz de adjacência, mas somente a diagonal inferior desta matriz; 
-c. si1032.tsp: o problema possui 1032 cidades e as distâncias estão disponíveis em 
-forma de matriz de adjacência, mas somente a diagonal superior desta matriz; 
-d. Verificar a distância calculada pela sua heurística
-A parte dois é com você emanu, faça na pasta heuristic que depois a gente junta no trabalho
+**Note:** The instances should be automatically generated with random weights. Any type of graph representation can be used.
 
+---
+
+## Part 2 (Emanuel)
+
+1. Implement a **heuristic** to find a solution to the Traveling Salesman Problem. The choice of heuristic is up to you.
+2. Apply the implemented method from the previous item to three problem instances available on Moodle:
+   - **si535.tsp**: The problem has 535 cities, and the distances are available in the form of an adjacency matrix, but only the upper diagonal of this matrix.
+   - **pa561.tsp**: The problem has 561 cities, and the distances are available in the form of an adjacency matrix, but only the lower diagonal of this matrix.
+   - **si1032.tsp**: The problem has 1032 cities, and the distances are available in the form of an adjacency matrix, but only the upper diagonal of this matrix.
+3. Verify the distance calculated by your heuristic.
