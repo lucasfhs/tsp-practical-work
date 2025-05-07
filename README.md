@@ -1,20 +1,37 @@
-# AedsII Practical Work
+# AEDS II Practical Work  
+**Traveling Salesman Problem (TSP) Solutions Analysis**  
 
-## Part 1 (Lucas)
+## Part 1: Brute-Force Approach *(Lucas)*  
 
-1. Implement the **brute force method** to solve the problem, i.e., an algorithm that determines all possible routes and selects the best (shortest) one.
-2. Generate instances with sizes from 2 to n and apply the method implemented in item 1.
-3. Compute the execution time while applying the brute force method on each of the generated instances. The method should be applied to as many instances as possible (likely with sizes ranging from 10 to 14 cities).
+### Objectives:  
+1. **Brute-Force Algorithm Implementation**  
+   - Develop an exhaustive search algorithm that evaluates **all possible routes** and selects the optimal (shortest) path.  
+   - *Note:* Any graph representation (adjacency matrix/list) is acceptable.  
 
-**Note:** The instances should be automatically generated with random weights. Any type of graph representation can be used.
+2. **Instance Generation & Testing**  
+   - Automatically generate random TSP instances with city sizes ranging from **2 to n**.  
+   - Focus on measurable sizes (e.g., **10–14 cities** due to computational constraints).  
+
+3. **Performance Analysis**  
+   - Record and compare **execution times** for each instance.  
+   - Document scalability challenges (e.g., exponential time complexity).  
 
 ---
 
-## Part 2 (Emanuel)
+## Part 2: Heuristic Approach *(Emanuel)*  
 
-1. Implement a **heuristic** to find a solution to the Traveling Salesman Problem. The choice of heuristic is up to you.
-2. Apply the implemented method from the previous item to three problem instances available on Moodle:
-   - **si535.tsp**: The problem has 535 cities, and the distances are available in the form of an adjacency matrix, but only the upper diagonal of this matrix.
-   - **pa561.tsp**: The problem has 561 cities, and the distances are available in the form of an adjacency matrix, but only the lower diagonal of this matrix.
-   - **si1032.tsp**: The problem has 1032 cities, and the distances are available in the form of an adjacency matrix, but only the upper diagonal of this matrix.
-3. Verify the distance calculated by your heuristic.
+### Objectives:  
+1. **Heuristic Implementation**  
+   - Implement a heuristic (e.g., **Nearest Neighbor**, 2-opt, or Christofides) to approximate TSP solutions efficiently.  
+
+2. **Benchmarking on Real-World Instances**  
+   - Test the heuristic on three provided datasets:  
+     - **si535.tsp**: 535 cities (upper diagonal adjacency matrix).  
+     - **pa561.tsp**: 561 cities (lower diagonal adjacency matrix).  
+     - **si1032.tsp**: 1032 cities (upper diagonal adjacency matrix).  
+
+3. **Solution Validation**  
+   - Calculate and verify the total distance of the heuristic-derived route.  
+   - Compare results with known optima (if available) or baseline heuristics.  
+
+---
