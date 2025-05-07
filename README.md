@@ -1,4 +1,4 @@
-# AEDS II Practical Work  
+# TSP-Solver-Analysis 
 **Traveling Salesman Problem (TSP) Solutions Analysis**  
 
 ## Part 1: Brute-Force Approach *(Lucas)*  
